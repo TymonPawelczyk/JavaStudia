@@ -20,7 +20,7 @@ public class A
             System.out.println("3 - Korona czeska");
 
             Integer integer = Integer.valueOf(wybor.readLine());
-            double x=Double.parseDouble(str);
+            double x = Double.parseDouble(str);
             if (integer == 1){
                 System.out.println("PLN: "+x*KURS_DOLAR);
             } else if (integer == 2) {
