@@ -1,13 +1,10 @@
-
 class Paszport extends Dokument
 {
-    public boolean czyPasuje(String wzorzec)
-    {
-        return false;
+    public Paszport(Osoba o){
+        super(o);
     }
-
     public String toString()
     {
-        return "";
+        return "paszport "+ o.imie+" "+ o.nazwisko+" "+ o.rokUrodzenia;
     }
 }
