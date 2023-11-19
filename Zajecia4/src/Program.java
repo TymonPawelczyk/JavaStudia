@@ -2,37 +2,15 @@ public class Program
 {
     public static void main(String[] args)
     {
+        Dokument[] bazaDanych={new Paszport(),new DowodOsobisty(),new Paszport()};
 
-        Prostokat a=new Prostokat(3,4);
-        a.info();
+        Dokument z;
+        String wzorzec="Gorniak";
 
-        Prostokat b=new Prostokat(2,2);
-        b.info();
-
-
-
-        if(a.intersects(b))
+        for(int i=0;i<bazaDanych.length;i++)
         {
-            System.out.println("-- przecinaja sie --\n");
+            z=bazaDanych[i];
+            if(z.czyPasuje(wzorzec))System.out.println("znaleziono: "+z);
         }
-        else
-        {
-            System.out.println("-- NIE przecinaja sie --\n");
-        }
-
-
-
-        a.translate(5,3);
-        a.info();
-
-        if(a.intersects(b))
-        {
-            System.out.println("-- przecinaja sie --\n");
-        }
-        else
-        {
-            System.out.println("-- NIE przecinaja sie --\n");
-        }
-
     }
 }
