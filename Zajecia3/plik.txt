@@ -1,0 +1,3 @@
+Pole prostokąta wynosi: 15
+Pole prostokąta wynosi: 18.975
+Pole prostokąta wynosi: 20.0
